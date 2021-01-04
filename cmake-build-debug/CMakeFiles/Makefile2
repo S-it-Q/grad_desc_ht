@@ -93,12 +93,12 @@ clean: CMakeFiles/grad_desc_ht.dir/clean
 CMakeFiles/grad_desc_ht.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Workspace\grad_desc_ht\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target grad_desc_ht"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Workspace\grad_desc_ht\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target grad_desc_ht"
 .PHONY : CMakeFiles/grad_desc_ht.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/grad_desc_ht.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\grad_desc_ht\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\grad_desc_ht\cmake-build-debug\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/grad_desc_ht.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\grad_desc_ht\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/grad_desc_ht.dir/rule

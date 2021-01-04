@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/grad_desc_ht.dir/src/CLContext.cpp.obj"
+  "CMakeFiles/grad_desc_ht.dir/src/CLKernel.cpp.obj"
   "CMakeFiles/grad_desc_ht.dir/src/main.cpp.obj"
   "grad_desc_ht.exe"
   "grad_desc_ht.exe.manifest"

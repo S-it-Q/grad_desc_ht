@@ -142,6 +142,60 @@ grad_desc_ht/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/build
 .PHONY : grad_desc_ht/fast
 
+src/CLContext.obj: src/CLContext.cpp.obj
+
+.PHONY : src/CLContext.obj
+
+# target to build an object file
+src/CLContext.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/CLContext.cpp.obj
+.PHONY : src/CLContext.cpp.obj
+
+src/CLContext.i: src/CLContext.cpp.i
+
+.PHONY : src/CLContext.i
+
+# target to preprocess a source file
+src/CLContext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/CLContext.cpp.i
+.PHONY : src/CLContext.cpp.i
+
+src/CLContext.s: src/CLContext.cpp.s
+
+.PHONY : src/CLContext.s
+
+# target to generate assembly for a file
+src/CLContext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/CLContext.cpp.s
+.PHONY : src/CLContext.cpp.s
+
+src/CLKernel.obj: src/CLKernel.cpp.obj
+
+.PHONY : src/CLKernel.obj
+
+# target to build an object file
+src/CLKernel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/CLKernel.cpp.obj
+.PHONY : src/CLKernel.cpp.obj
+
+src/CLKernel.i: src/CLKernel.cpp.i
+
+.PHONY : src/CLKernel.i
+
+# target to preprocess a source file
+src/CLKernel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/CLKernel.cpp.i
+.PHONY : src/CLKernel.cpp.i
+
+src/CLKernel.s: src/CLKernel.cpp.s
+
+.PHONY : src/CLKernel.s
+
+# target to generate assembly for a file
+src/CLKernel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/CLKernel.cpp.s
+.PHONY : src/CLKernel.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -178,6 +232,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... grad_desc_ht
+	@echo ... src/CLContext.obj
+	@echo ... src/CLContext.i
+	@echo ... src/CLContext.s
+	@echo ... src/CLKernel.obj
+	@echo ... src/CLKernel.i
+	@echo ... src/CLKernel.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

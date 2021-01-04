@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Workspace/grad_desc_ht/src/CLContext.cpp" "D:/Workspace/grad_desc_ht/cmake-build-debug/CMakeFiles/grad_desc_ht.dir/src/CLContext.cpp.obj"
+  "D:/Workspace/grad_desc_ht/src/CLKernel.cpp" "D:/Workspace/grad_desc_ht/cmake-build-debug/CMakeFiles/grad_desc_ht.dir/src/CLKernel.cpp.obj"
   "D:/Workspace/grad_desc_ht/src/main.cpp" "D:/Workspace/grad_desc_ht/cmake-build-debug/CMakeFiles/grad_desc_ht.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
