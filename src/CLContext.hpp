@@ -28,5 +28,5 @@ private:
     cl::Context _context;
     std::vector<cl::Device> _devices;
 };
-
+4
 #endif //GRAD_DESC_HT_CLCONTEXT_HPP
