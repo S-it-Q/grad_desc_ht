@@ -82,18 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Workspace/grad_desc_ht/src/CLContext.cpp">
-			<Option target="grad_desc_ht"/>
-		</Unit>
-		<Unit filename="D:/Workspace/grad_desc_ht/src/CLContext.hpp">
-			<Option target="grad_desc_ht"/>
-		</Unit>
-		<Unit filename="D:/Workspace/grad_desc_ht/src/CLKernel.cpp">
-			<Option target="grad_desc_ht"/>
-		</Unit>
-		<Unit filename="D:/Workspace/grad_desc_ht/src/CLKernel.hpp">
-			<Option target="grad_desc_ht"/>
-		</Unit>
 		<Unit filename="D:/Workspace/grad_desc_ht/src/main.cpp">
 			<Option target="grad_desc_ht"/>
 		</Unit>
