@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/grad_desc_ht.dir/src/WorkgroupManager.cpp.obj"
   "CMakeFiles/grad_desc_ht.dir/src/main.cpp.obj"
   "grad_desc_ht.exe"
   "grad_desc_ht.exe.manifest"

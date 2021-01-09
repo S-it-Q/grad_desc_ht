@@ -11,6 +11,8 @@
 #include <stdexcept>
 #include <string>
 
+#include "WorkgroupManager.hpp"
+
 using namespace std;
 
 string getSource(const string& filePath)
@@ -30,6 +32,24 @@ string getSource(const string& filePath)
     srcFile.close();
 
     return src;
+}
+
+vector<size_t> getPreferredWorkgroupSize(cl::Kernel& kernel, vector<cl::Device>& devices) {
+    vector<size_t> preferredWorkgroupSize;
+
+    try {
+        preferredWorkgroupSize.reserve(devices.size());
+        for (cl::Device &device : devices) {
+            size_t param;
+            kernel.getWorkGroupInfo(device, CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE, &param);
+            preferredWorkgroupSize.push_back(param);
+        }
+    }
+    catch (const cl::Error &err) {
+        throw err;
+    }
+
+    return preferredWorkgroupSize;
 }
 
 int main(int argc, char* argv[])
@@ -67,13 +87,18 @@ int main(int argc, char* argv[])
         sobelProgram.build(devices);
 
         cl::Kernel sobelKernel(sobelProgram, "sobel");
+        std::vector<size_t> test(3, 128);
 
-        // Run kernel
-        std::vector<cl::Event> helloEvent(queues.size());
-        for (int i = 0; i < queues.size(); ++i) {
-            queues[i].enqueueNDRangeKernel(sobelKernel, cl::NullRange, cl::NDRange(4, 4), cl::NullRange, nullptr, &helloEvent[i]);
-        }
-        cl::WaitForEvents(helloEvent);
+        cl::NDRange total = cl::NDRange(1279, 4, 1);
+        WorkgroupManager workgroupManager(test, total);
+
+
+//        // Run kernel
+//        std::vector<cl::Event> helloEvent(queues.size());
+//        for (int i = 0; i < queues.size(); ++i) {
+//            queues[i].enqueueNDRangeKernel(sobelKernel, cl::NullRange, cl::NDRange(4, 4), cl::NullRange, nullptr, &helloEvent[i]);
+//        }
+//        cl::WaitForEvents(helloEvent);
     }
     catch (const cl::Error& err) {
         cerr << "CL Error Code: " << err.err() << ", CL Error: " << err.what() << endl;

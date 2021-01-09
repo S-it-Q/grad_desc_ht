@@ -142,6 +142,33 @@ grad_desc_ht/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/build
 .PHONY : grad_desc_ht/fast
 
+src/WorkgroupManager.obj: src/WorkgroupManager.cpp.obj
+
+.PHONY : src/WorkgroupManager.obj
+
+# target to build an object file
+src/WorkgroupManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/WorkgroupManager.cpp.obj
+.PHONY : src/WorkgroupManager.cpp.obj
+
+src/WorkgroupManager.i: src/WorkgroupManager.cpp.i
+
+.PHONY : src/WorkgroupManager.i
+
+# target to preprocess a source file
+src/WorkgroupManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/WorkgroupManager.cpp.i
+.PHONY : src/WorkgroupManager.cpp.i
+
+src/WorkgroupManager.s: src/WorkgroupManager.cpp.s
+
+.PHONY : src/WorkgroupManager.s
+
+# target to generate assembly for a file
+src/WorkgroupManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\grad_desc_ht.dir\build.make CMakeFiles/grad_desc_ht.dir/src/WorkgroupManager.cpp.s
+.PHONY : src/WorkgroupManager.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... grad_desc_ht
+	@echo ... src/WorkgroupManager.obj
+	@echo ... src/WorkgroupManager.i
+	@echo ... src/WorkgroupManager.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
